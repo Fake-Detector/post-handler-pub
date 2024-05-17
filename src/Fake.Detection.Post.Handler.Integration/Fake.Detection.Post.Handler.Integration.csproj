@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <PackageReference Include="Google.Protobuf" Version="3.24.0" />
+        <PackageReference Include="Grpc.Tools" Version="2.51.0">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Grpc.Net.Client" Version="2.55.0" />
+        <PackageReference Include="Grpc.Net.ClientFactory" Version="2.55.0" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="2.1.0"/>
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="Grpc\Protos\FakeDetector.proto" GrpcServices="Client" />
+
+    </ItemGroup>
+
+
+
+
+</Project>

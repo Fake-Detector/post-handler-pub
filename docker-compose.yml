@@ -1,0 +1,17 @@
+﻿version: "3"
+services:
+  fake.detection.post.handler:
+    image: fake.detection.post.handler
+    build:
+      context: .
+      dockerfile: src/Fake.Detection.Post.Handler/Dockerfile
+    ports:
+      - "5166:5166"
+      - "7166:7166"
+    restart: always
+    networks:
+      - shared_network
+
+networks:
+  shared_network:
+    external: true

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{422A01CD-989A-4DB5-A02B-89B91E7961DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fake.Detection.Post.Handler", "src\Fake.Detection.Post.Handler\Fake.Detection.Post.Handler.csproj", "{EA66512F-EEE0-406A-9FB4-ADF6FDD94D1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fake.Detection.Post.Handler.Integration", "src\Fake.Detection.Post.Handler.Integration\Fake.Detection.Post.Handler.Integration.csproj", "{954D5413-5803-474F-9FC5-C99BC8A58055}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{EA302A68-A5A9-4F1C-9DCF-1280FE6E6F16}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		.gitignore = .gitignore
+		README.md = README.md
+		fakehandler.pfx = fakehandler.pfx
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA66512F-EEE0-406A-9FB4-ADF6FDD94D1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA66512F-EEE0-406A-9FB4-ADF6FDD94D1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA66512F-EEE0-406A-9FB4-ADF6FDD94D1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA66512F-EEE0-406A-9FB4-ADF6FDD94D1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{954D5413-5803-474F-9FC5-C99BC8A58055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{954D5413-5803-474F-9FC5-C99BC8A58055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{954D5413-5803-474F-9FC5-C99BC8A58055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{954D5413-5803-474F-9FC5-C99BC8A58055}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA66512F-EEE0-406A-9FB4-ADF6FDD94D1F} = {422A01CD-989A-4DB5-A02B-89B91E7961DF}
+		{954D5413-5803-474F-9FC5-C99BC8A58055} = {422A01CD-989A-4DB5-A02B-89B91E7961DF}
+	EndGlobalSection
+EndGlobal
